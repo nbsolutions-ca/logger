@@ -1,7 +1,7 @@
 
-import { LogLevel } from '@nbsolutions/interfaces';
+import { ILogger, LogLevel } from '@nbsolutions/interfaces';
 
-export class Logger {
+export class Logger implements ILogger {
     private $component: string;
     private $enableVerboseLogging: boolean;
     private $enableDebugLogging: boolean;
@@ -38,6 +38,26 @@ export class Logger {
 
     protected _getColorForComponent(): string {
         return 'grey';
+    }
+
+    public debug(message: string): void {
+        this.log(LogLevel.DEBUG, message);
+    }
+
+    public verbose(message: string): void {
+        this.log(LogLevel.VERBOSE, message);
+    }
+
+    public error(message: string): void {
+        this.log(LogLevel.ERROR, message);
+    }
+
+    public info(message: string): void {
+        this.log(LogLevel.INFO, message);
+    }
+
+    public warn(message: string): void {
+        this.log(LogLevel.WARN, message);
     }
 
     public log(level: LogLevel, message: string): void {
