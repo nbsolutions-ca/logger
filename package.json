@@ -1,0 +1,49 @@
+{
+  "name": "@nbsolutions/logger",
+  "version": "0.0.0",
+  "description": "Logger utility for NBSolutions packages",
+  "main": "lib/api.js",
+  "types": "types/api.d.ts",
+  "devDependencies": {
+    "@nbsolutions/eslint-plugin": "1.0.0",
+    "@types/jest": "27.0.1",
+    "@typescript-eslint/eslint-plugin": "4.29.2",
+    "@typescript-eslint/parser": "4.29.2",
+    "auto-changelog": "2.3.0",
+    "eslint": "7.32.0",
+    "jest": "27.0.6",
+    "ts-jest": "27.0.5",
+    "ts-node": "10.2.1",
+    "typedoc": "0.21.5",
+    "typedoc-plugin-markdown": "3.10.4",
+    "typescript": "4.3.5",
+    "@nbsolutions/interfaces": "file:../interfaces/nbsolutions-interfaces-0.0.0.tgz"
+  },
+  "scripts": {
+    "lint": "eslint --ext .ts,.tsx '?(src|spec)/**/*.?(ts|tsx)' --cache",
+    "docs": "typedoc --excludePrivate --includeVersion -readme ./README.md --out ./docs ./src",
+    "build": "npm run lint && tsc",
+    "build:release": "tsc",
+    "changelog": "auto-changelog --output CHANGELOG.md -p --release-summary --ignore-commit-pattern chore",
+    "test": "npm run lint && jest",
+    "preversion": "npm test",
+    "version": "NODE_ENV=production npm run-script build:release && npm run-script docs && npm run changelog && git add CHANGELOG.md docs && git commit -m 'chore: changelog'",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbsolutions-ca/logger.git"
+  },
+  "author": "norman@nbsolutions.ca",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nbsolutions-ca/logger/issues"
+  },
+  "homepage": "https://github.com/nbsolutions-ca/logger#readme",
+  "dependencies": {
+    "tslib": "2.3.1"
+  },
+  "peerDependencies": {
+    "@nbsolutions/interfaces": "*"
+  }
+}
