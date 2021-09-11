@@ -1,14 +1,15 @@
 
-import { ILogger } from '@nbsolutions/interfaces';
+import { ILogger, ILoggerManager } from '@nbsolutions/interfaces';
+import { Logger } from '../src/Logger';
 import {LoggerManager} from '../src/LoggerManager';
 
 describe('LoggerManager', () => {
     class A {}
     class B extends A {}
-    let lm: LoggerManager;
+    let lm: ILoggerManager;
 
     beforeEach(() => {
-        lm = new LoggerManager();
+        lm = LoggerManager.getInstance();
     });
 
     it('A Logger to be tagged as A', () => {
@@ -22,8 +23,8 @@ describe('LoggerManager', () => {
     });
 
     it('LoggerManager logger', () => {
-        let logger: ILogger = lm.getLogger(LoggerManager);
-        expect(logger.getComponent()).toBe('LoggerManager');
+        let logger: ILogger = lm.getLogger(Logger);
+        expect(logger.getComponent()).toBe('Logger');
     });
 
     it('should hold references', () => {

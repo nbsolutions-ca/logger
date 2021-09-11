@@ -3,8 +3,9 @@ import {IConstructor, ILogger, ILoggerManager} from '@nbsolutions/interfaces';
 
 export class LoggerManager implements ILoggerManager {
     private $loggers: Map<IConstructor, ILogger>;
+    private static $instance: ILoggerManager;
 
-    public constructor() {
+    private constructor() {
         this.$loggers = new Map();
     }
 
@@ -18,5 +19,13 @@ export class LoggerManager implements ILoggerManager {
         }
 
         return this.$loggers.get(obj);
+    }
+
+    public static getInstance(): ILoggerManager {
+        if (!LoggerManager.$instance) {
+            LoggerManager.$instance = new LoggerManager();
+        }
+
+        return LoggerManager.$instance;
     }
 }
