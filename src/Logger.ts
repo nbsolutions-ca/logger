@@ -12,6 +12,10 @@ export class Logger implements ILogger {
         this.$enableDebugLogging = false;
     }
 
+    public getComponent(): string {
+        return this.$component;
+    }
+
     public enableDebugLog(state: boolean): void {
         this.$enableDebugLogging = state;
     }
