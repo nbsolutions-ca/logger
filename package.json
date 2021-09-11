@@ -6,7 +6,7 @@
   "types": "types/api.d.ts",
   "devDependencies": {
     "@nbsolutions/eslint-plugin": "1.0.0",
-    "@nbsolutions/interfaces": "file:../interfaces/nbsolutions-interfaces-0.0.0.tgz",
+    "@nbsolutions/interfaces": "file:/development/nbsolutions/interfaces/nbsolutions-interfaces-0.0.0.tgz",
     "@types/jest": "27.0.1",
     "@typescript-eslint/eslint-plugin": "4.31.0",
     "@typescript-eslint/parser": "4.31.0",
@@ -44,6 +44,6 @@
     "tslib": "2.3.1"
   },
   "peerDependencies": {
-    "@nbsolutions/interfaces": "*"
+    "@nbsolutions/interfaces": "file:/development/nbsolutions/interfaces/nbsolutions-interfaces-0.0.0.tgz"
   }
 }
