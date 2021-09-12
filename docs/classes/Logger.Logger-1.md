@@ -1,8 +1,12 @@
-[@nbsolutions/logger - v0.0.0](../README.md) / [Exports](../modules.md) / [Logger](../modules/Logger.md) / Logger
+[@nbsolutions/logger - v0.0.0-alpha.0](../README.md) / [Exports](../modules.md) / [Logger](../modules/Logger.md) / Logger
 
 # Class: Logger
 
 [Logger](../modules/Logger.md).Logger
+
+## Implements
+
+- `ILogger`
 
 ## Table of contents
 
@@ -15,11 +19,17 @@
 - [\_getColorForComponent](Logger.Logger-1.md#_getcolorforcomponent)
 - [\_getColorForLevel](Logger.Logger-1.md#_getcolorforlevel)
 - [\_print](Logger.Logger-1.md#_print)
+- [debug](Logger.Logger-1.md#debug)
 - [deprecate](Logger.Logger-1.md#deprecate)
 - [deprecateParameterType](Logger.Logger-1.md#deprecateparametertype)
 - [enableDebugLog](Logger.Logger-1.md#enabledebuglog)
 - [enableVerboseLog](Logger.Logger-1.md#enableverboselog)
+- [error](Logger.Logger-1.md#error)
+- [getComponent](Logger.Logger-1.md#getcomponent)
+- [info](Logger.Logger-1.md#info)
 - [log](Logger.Logger-1.md#log)
+- [verbose](Logger.Logger-1.md#verbose)
+- [warn](Logger.Logger-1.md#warn)
 
 ## Constructors
 
@@ -35,7 +45,7 @@
 
 #### Defined in
 
-[Logger.ts:9](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L9)
+[Logger.ts:9](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L9)
 
 ## Methods
 
@@ -49,7 +59,7 @@
 
 #### Defined in
 
-[Logger.ts:39](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L39)
+[Logger.ts:43](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L43)
 
 ___
 
@@ -61,7 +71,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `level` | [`LogLevel`](../enums/LogLevel.LogLevel-1.md) |
+| `level` | `LogLevel` |
 
 #### Returns
 
@@ -69,7 +79,7 @@ ___
 
 #### Defined in
 
-[Logger.ts:27](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L27)
+[Logger.ts:31](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L31)
 
 ___
 
@@ -91,7 +101,31 @@ ___
 
 #### Defined in
 
-[Logger.ts:23](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L23)
+[Logger.ts:27](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L27)
+
+___
+
+### debug
+
+▸ **debug**(`message`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+ILogger.debug
+
+#### Defined in
+
+[Logger.ts:47](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L47)
 
 ___
 
@@ -110,21 +144,24 @@ ___
 
 `void`
 
+#### Implementation of
+
+ILogger.deprecate
+
 #### Defined in
 
-[Logger.ts:84](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L84)
+[Logger.ts:108](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L108)
 
 ___
 
 ### deprecateParameterType
 
-▸ **deprecateParameterType**(`component`, `argumentLocation`, `deprecatedType`, `alternative?`): `void`
+▸ **deprecateParameterType**(`argumentLocation`, `deprecatedType`, `alternative?`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `component` | `string` |
 | `argumentLocation` | `number` |
 | `deprecatedType` | `string` |
 | `alternative?` | `string` |
@@ -133,9 +170,13 @@ ___
 
 `void`
 
+#### Implementation of
+
+ILogger.deprecateParameterType
+
 #### Defined in
 
-[Logger.ts:104](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L104)
+[Logger.ts:128](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L128)
 
 ___
 
@@ -153,9 +194,13 @@ ___
 
 `void`
 
+#### Implementation of
+
+ILogger.enableDebugLog
+
 #### Defined in
 
-[Logger.ts:15](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L15)
+[Logger.ts:19](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L19)
 
 ___
 
@@ -173,9 +218,79 @@ ___
 
 `void`
 
+#### Implementation of
+
+ILogger.enableVerboseLog
+
 #### Defined in
 
-[Logger.ts:19](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L19)
+[Logger.ts:23](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L23)
+
+___
+
+### error
+
+▸ **error**(`message`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+ILogger.error
+
+#### Defined in
+
+[Logger.ts:55](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L55)
+
+___
+
+### getComponent
+
+▸ **getComponent**(): `string`
+
+#### Returns
+
+`string`
+
+#### Implementation of
+
+ILogger.getComponent
+
+#### Defined in
+
+[Logger.ts:15](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L15)
+
+___
+
+### info
+
+▸ **info**(`message`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+ILogger.info
+
+#### Defined in
+
+[Logger.ts:59](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L59)
 
 ___
 
@@ -187,13 +302,65 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `level` | [`LogLevel`](../enums/LogLevel.LogLevel-1.md) |
+| `level` | `LogLevel` |
 | `message` | `string` |
 
 #### Returns
 
 `void`
 
+#### Implementation of
+
+ILogger.log
+
 #### Defined in
 
-[Logger.ts:43](https://github.com/nbsolutions-ca/logger/blob/master/src/Logger.ts#L43)
+[Logger.ts:67](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L67)
+
+___
+
+### verbose
+
+▸ **verbose**(`message`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+ILogger.verbose
+
+#### Defined in
+
+[Logger.ts:51](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L51)
+
+___
+
+### warn
+
+▸ **warn**(`message`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `message` | `string` |
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+ILogger.warn
+
+#### Defined in
+
+[Logger.ts:63](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L63)

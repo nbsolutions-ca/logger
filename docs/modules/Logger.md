@@ -1,4 +1,4 @@
-[@nbsolutions/logger - v0.0.0](../README.md) / [Exports](../modules.md) / Logger
+[@nbsolutions/logger - v0.0.0-alpha.0](../README.md) / [Exports](../modules.md) / Logger
 
 # Module: Logger
 
