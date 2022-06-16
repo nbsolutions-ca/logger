@@ -48,6 +48,6 @@
     "tslib": "2.4.0"
   },
   "peerDependencies": {
-    "@nbsolutions/interfaces": "0.0.2"
+    "@nbsolutions/interfaces": "0.x"
   }
 }
