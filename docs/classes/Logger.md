@@ -1,8 +1,6 @@
-[@nbsolutions/logger - v0.0.0-alpha.0](../README.md) / [Exports](../modules.md) / [Logger](../modules/Logger.md) / Logger
+[@nbsolutions/logger - v0.0.0](../README.md) / [Exports](../modules.md) / Logger
 
 # Class: Logger
-
-[Logger](../modules/Logger.md).Logger
 
 ## Implements
 
@@ -12,24 +10,24 @@
 
 ### Constructors
 
-- [constructor](Logger.Logger-1.md#constructor)
+- [constructor](Logger.md#constructor)
 
 ### Methods
 
-- [\_getColorForComponent](Logger.Logger-1.md#_getcolorforcomponent)
-- [\_getColorForLevel](Logger.Logger-1.md#_getcolorforlevel)
-- [\_print](Logger.Logger-1.md#_print)
-- [debug](Logger.Logger-1.md#debug)
-- [deprecate](Logger.Logger-1.md#deprecate)
-- [deprecateParameterType](Logger.Logger-1.md#deprecateparametertype)
-- [enableDebugLog](Logger.Logger-1.md#enabledebuglog)
-- [enableVerboseLog](Logger.Logger-1.md#enableverboselog)
-- [error](Logger.Logger-1.md#error)
-- [getComponent](Logger.Logger-1.md#getcomponent)
-- [info](Logger.Logger-1.md#info)
-- [log](Logger.Logger-1.md#log)
-- [verbose](Logger.Logger-1.md#verbose)
-- [warn](Logger.Logger-1.md#warn)
+- [\_getColorForComponent](Logger.md#_getcolorforcomponent)
+- [\_getColorForLevel](Logger.md#_getcolorforlevel)
+- [\_print](Logger.md#_print)
+- [debug](Logger.md#debug)
+- [deprecate](Logger.md#deprecate)
+- [deprecateParameterType](Logger.md#deprecateparametertype)
+- [enableDebugLog](Logger.md#enabledebuglog)
+- [enableVerboseLog](Logger.md#enableverboselog)
+- [error](Logger.md#error)
+- [getComponent](Logger.md#getcomponent)
+- [info](Logger.md#info)
+- [log](Logger.md#log)
+- [verbose](Logger.md#verbose)
+- [warn](Logger.md#warn)
 
 ## Constructors
 
@@ -45,7 +43,7 @@
 
 #### Defined in
 
-[Logger.ts:9](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L9)
+[Logger.ts:9](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L9)
 
 ## Methods
 
@@ -59,7 +57,7 @@
 
 #### Defined in
 
-[Logger.ts:43](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L43)
+[Logger.ts:43](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L43)
 
 ___
 
@@ -79,7 +77,7 @@ ___
 
 #### Defined in
 
-[Logger.ts:31](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L31)
+[Logger.ts:31](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L31)
 
 ___
 
@@ -101,7 +99,7 @@ ___
 
 #### Defined in
 
-[Logger.ts:27](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L27)
+[Logger.ts:27](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L27)
 
 ___
 
@@ -125,7 +123,7 @@ ILogger.debug
 
 #### Defined in
 
-[Logger.ts:47](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L47)
+[Logger.ts:47](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L47)
 
 ___
 
@@ -150,7 +148,7 @@ ILogger.deprecate
 
 #### Defined in
 
-[Logger.ts:108](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L108)
+[Logger.ts:108](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L108)
 
 ___
 
@@ -176,7 +174,7 @@ ILogger.deprecateParameterType
 
 #### Defined in
 
-[Logger.ts:128](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L128)
+[Logger.ts:128](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L128)
 
 ___
 
@@ -200,7 +198,7 @@ ILogger.enableDebugLog
 
 #### Defined in
 
-[Logger.ts:19](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L19)
+[Logger.ts:19](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L19)
 
 ___
 
@@ -224,7 +222,7 @@ ILogger.enableVerboseLog
 
 #### Defined in
 
-[Logger.ts:23](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L23)
+[Logger.ts:23](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L23)
 
 ___
 
@@ -248,7 +246,7 @@ ILogger.error
 
 #### Defined in
 
-[Logger.ts:55](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L55)
+[Logger.ts:55](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L55)
 
 ___
 
@@ -266,7 +264,7 @@ ILogger.getComponent
 
 #### Defined in
 
-[Logger.ts:15](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L15)
+[Logger.ts:15](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L15)
 
 ___
 
@@ -290,7 +288,7 @@ ILogger.info
 
 #### Defined in
 
-[Logger.ts:59](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L59)
+[Logger.ts:59](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L59)
 
 ___
 
@@ -315,7 +313,7 @@ ILogger.log
 
 #### Defined in
 
-[Logger.ts:67](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L67)
+[Logger.ts:67](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L67)
 
 ___
 
@@ -339,7 +337,7 @@ ILogger.verbose
 
 #### Defined in
 
-[Logger.ts:51](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L51)
+[Logger.ts:51](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L51)
 
 ___
 
@@ -363,4 +361,4 @@ ILogger.warn
 
 #### Defined in
 
-[Logger.ts:63](https://github.com/nbsolutions-ca/logger/blob/6fa87ee/src/Logger.ts#L63)
+[Logger.ts:63](https://github.com/nbsolutions-ca/logger-js/blob/0d7a120/src/Logger.ts#L63)
