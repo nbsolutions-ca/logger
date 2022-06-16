@@ -1,6 +1,6 @@
 {
   "name": "@nbsolutions/logger",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0",
   "description": "Logger utility for NBSolutions packages",
   "main": "lib/api.js",
   "types": "types/api.d.ts",
